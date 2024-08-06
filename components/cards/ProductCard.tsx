@@ -10,8 +10,19 @@ import React from "react";
 import { Product } from "@/types/types";
 import { Ionicons } from "@expo/vector-icons";
 import {Link} from 'expo-router'
+import useStore from "@/state/store";
+import { Toast } from "toastify-react-native";
 
 const ProductCard = ({ product }: { product: Product }) => {
+    const {addToCart, cart} = useStore((state) => state)
+
+    // add to cart
+    const handlePress = () => {
+        addToCart(product)
+        Toast.success(`${product.name} added to cart`)
+        }
+
+        
   return (
     <Link push href={`/${product.id}`} asChild>
     <Pressable style={styles.container}>
@@ -26,7 +37,7 @@ const ProductCard = ({ product }: { product: Product }) => {
         }}
       >
         <Text style={styles.price}>$ {product.price}</Text>
-        <TouchableOpacity style={styles.add}>
+        <TouchableOpacity style={styles.add} onPress={handlePress}>
           <Ionicons name="add" size={15} color="white" />
         </TouchableOpacity>
       </View>
