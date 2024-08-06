@@ -1,0 +1,52 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "name": "Margherita",
+            "description": "Classic pizza with tomato sauce, mozzarella, and fresh basil.",
+            "imageUrl": "https://i.ibb.co/bJVm33K/margherita.png",
+            "price": 8.99,
+            "ingredients": ["Tomato Sauce", "Mozzarella", "Basil"]
+        },
+        {
+            "id": "2",
+            "name": "Pepperoni",
+            "description": "Delicious pizza topped with tomato sauce, mozzarella, and pepperoni slices.",
+            "imageUrl": "https://i.ibb.co/sm3qCcY/pepperoni.png",
+            "price": 10.99,
+            "ingredients": ["Tomato Sauce", "Mozzarella", "Pepperoni"]
+        },
+        {
+            "id": "3",
+            "name": "BBQ Chicken",
+            "description": "Savory pizza with BBQ sauce, mozzarella, chicken, red onions, and cilantro.",
+            "imageUrl": "https://i.ibb.co/KqQMgc0/bbq.png",
+            "price": 12.99,
+            "ingredients": ["BBQ Sauce", "Mozzarella", "Chicken", "Red Onions", "Cilantro"]
+        },
+        {
+            "id": "4",
+            "name": "Veggie",
+            "description": "Healthy pizza loaded with tomato sauce, mozzarella, and fresh vegetables.",
+            "imageUrl": "https://i.ibb.co/QftfRfT/veggie.png",
+            "price": 9.99,
+            "ingredients": ["Tomato Sauce", "Mozzarella", "Bell Peppers", "Olives", "Onions", "Mushrooms"]
+        },
+        {
+            "id": "5",
+            "name": "Hawaiian",
+            "description": "Tropical pizza with tomato sauce, mozzarella, ham, and pineapple.",
+            "imageUrl": "@/assets/images/pizzas/hawaiian.png",
+            "price": 11.99,
+            "ingredients": ["Tomato Sauce", "Mozzarella", "Ham", "Pineapple"]
+        },
+        {
+            "id": "6",
+            "name": "Meat Lovers",
+            "description": "Hearty pizza with tomato sauce, mozzarella, and a variety of meats.",
+            "imageUrl": "https://i.ibb.co/1sYCcBZ/meat-lovers.png",
+            "price": 13.99,
+            "ingredients": ["Tomato Sauce", "Mozzarella", "Pepperoni", "Sausage", "Bacon", "Ham"]
+        }
+    ]
+}
