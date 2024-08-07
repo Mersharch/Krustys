@@ -37,10 +37,7 @@ export default function HomeScreen() {
 
   return (
     <SafeAreaView style={styles.safeArea}>
-      <View>
-      <Text>Welcome</Text>
-      <Text>Kwadwo</Text>
-      </View>
+      <Text style={{fontSize:24, fontWeight: 'bold'}}>Welcome to Krusty's</Text>
 
       <SearchInput value={searchQuery} setSearchQuery={setSearchQuery} />
       <FlatList

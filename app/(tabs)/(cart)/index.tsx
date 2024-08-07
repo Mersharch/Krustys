@@ -60,11 +60,8 @@ const styles = StyleSheet.create({
   },
   checkout: {
     backgroundColor: '#028364',
-    width: "100%",
-    padding: 10,
-    flexDirection: 'row',
+    padding: 16,
+    borderRadius: 8,
     alignItems: 'center',
-    justifyContent: 'center',
-    marginVertical: 10
   }
 })
