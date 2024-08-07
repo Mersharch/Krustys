@@ -2,11 +2,17 @@ import { StyleSheet, Text, TextInput, View } from 'react-native'
 import React from 'react'
 import { Ionicons } from '@expo/vector-icons'
 
-const SearchInput = () => {
+
+interface Props {
+    value: string;
+    setSearchQuery: React.Dispatch<React.SetStateAction<string>>
+}
+const SearchInput = ({ value, setSearchQuery }: Props) => {
+    
   return (
       <View style={styles.container}>
           <Ionicons name="search" size={20} color="#8f8f8f" />
-          <TextInput placeholder="Search..." style={styles.input} placeholderTextColor='#8f8f8f' />
+          <TextInput placeholder="Search..." style={styles.input} placeholderTextColor='#8f8f8f' value={value} onChangeText={(val) => setSearchQuery(val)} />
     </View>
   )
 }
