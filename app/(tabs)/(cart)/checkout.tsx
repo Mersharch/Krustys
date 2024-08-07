@@ -78,7 +78,7 @@ const CheckOut = () => {
           }}
           >
           <Text style={styles.totalText}>Delivery: </Text>
-          <Text style={styles.totalText}>$ 15</Text>
+          <Text style={styles.totalText}>$ 15.99</Text>
         </View>
         <View
           style={{
@@ -89,7 +89,7 @@ const CheckOut = () => {
           }}
           >
           <Text style={styles.totalText}>Total: </Text>
-          <Text style={styles.totalText}>$ {subTotal + 15}</Text>
+          <Text style={styles.totalText}>$ {(subTotal + 15.99).toFixed(2)}</Text>
           </View>
           
           <Link push href={"/ordered"} asChild>
