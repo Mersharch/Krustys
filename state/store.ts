@@ -26,7 +26,23 @@ const useStore = create<any>()((set) => ({
         cart: state.cart.filter((cartItem: any) => cartItem.id !== itemId)
     })),
     clearCart: () => set({ cart: [] }),
-    updateUser: (user: any) => set({ user })
+    updateUser: (user: any) => set({ user }),
+    increaseQuantity: (itemId: any) => set((state: any) => ({
+        cart: state.cart.map((cartItem: any) =>
+            cartItem.id === itemId
+                ? { ...cartItem, quantity: cartItem.quantity + 1 }
+                : cartItem
+        )
+    })),
+    decreaseQuantity: (itemId: any) => set((state: any) => ({
+        cart: state.cart
+            .map((cartItem: any) =>
+                cartItem.id === itemId
+                    ? { ...cartItem, quantity: cartItem.quantity - 1 }
+                    : cartItem
+            )
+            .filter((cartItem: any) => cartItem.quantity > 0)
+    })),
 }))
 
 

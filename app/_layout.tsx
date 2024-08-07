@@ -39,6 +39,7 @@ export default function RootLayout() {
         animationStyle="rightInOut"
         animationInTiming={500}
         position="top"
+        width={320}
       />
     </ThemeProvider>
   );
